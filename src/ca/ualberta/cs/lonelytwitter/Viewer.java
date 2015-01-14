@@ -12,4 +12,8 @@ public class Viewer extends User {
 		}
 		
 	}
+	
+	public Viewer(String string) {
+		super(string);
+	}
 }

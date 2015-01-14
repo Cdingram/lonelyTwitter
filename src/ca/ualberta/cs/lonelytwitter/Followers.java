@@ -2,12 +2,12 @@ package ca.ualberta.cs.lonelytwitter;
 
 import java.util.ArrayList;
 
-public class Followers extends Viewer{
+public class Followers extends Author{
 	
 	private ArrayList<User> followers;
 	
-	public Followers() {
-		super();
+	public Followers(String name) {
+		super(name);
 		followers = new ArrayList<User>();
 	}
 	
