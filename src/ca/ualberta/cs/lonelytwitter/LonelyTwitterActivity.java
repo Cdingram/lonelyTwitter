@@ -45,6 +45,16 @@ public class LonelyTwitterActivity extends Activity {
 			public void onClick(View v) {
 				tweets.removeAll(tweets);
 				adapter.notifyDataSetChanged();
+				try {
+					FileOutputStream fos = openFileOutput(FILENAME, 0);
+					fos.close();
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				
 			}
 		});
